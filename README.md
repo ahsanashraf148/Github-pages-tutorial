@@ -221,6 +221,16 @@ In this step, I'll show you how you can store the source code of the React app o
 
     > I recommend exploring the GitHub repository at this point. It will have two branches: `master` and `gh-pages`. The `master` branch will contain the React app's source code, while the `gh-pages` branch will contain the distributable version of the React app.
 
+# To Update the website
+
+Add and commit the updated code to GitHub as mentioned above and simply run
+
+    ```shell
+    $ npm run deploy
+    ```
+
+> Then open your website again
+
 # References
 
 1. [The official `create-react-app` deployment guide](https://create-react-app.dev/docs/deployment/#github-pages)
