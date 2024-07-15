@@ -154,7 +154,7 @@ At this point, the  React app's `package.json` file includes deployment scripts.
     You can do that by issuing a command in this format: 
     
     ```shell
-    $ git remote add origin https://github.com/{username}/{repo-name}.git
+     git remote add origin https://github.com/{username}/{repo-name}.git
     ```
     
     To customize that command for your situation, replace `{username}` with your GitHub username and replace `{repo-name}` with the name of the GitHub repository you created in Step 1.
@@ -174,7 +174,7 @@ At this point, the local repository has a "remote" whose URL points to the GitHu
 1. Push the React app to the GitHub repository
 
     ```shell
-    $ npm run deploy
+     npm run deploy
     ```
 
     > That will cause the `predeploy` and `deploy` scripts defined in `package.json` to run.
@@ -183,7 +183,7 @@ At this point, the local repository has a "remote" whose URL points to the GitHu
 
     > By default, the new commit on the `gh-pages` branch will have a commit message of "Updates". You can [specify a custom commit message](https://github.com/gitname/react-gh-pages/issues/80#issuecomment-1042449820) via the `-m` option, like this:
     > ```shell
-    > $ npm run deploy -- -m "Deploy React app to GitHub Pages"
+    >  npm run deploy -- -m "Deploy React app to GitHub Pages"
     > ```
 
 At this point, the GitHub repository contains a branch named `gh-pages`, which contains the files that make up the distributable version of the React app. However, we haven't configured GitHub Pages to _serve_ those files yet.
@@ -214,9 +214,9 @@ In this step, I'll show you how you can store the source code of the React app o
 1. Commit the changes you made while you were following this tutorial, to the `master` branch of the local Git repository; then, push that branch up to the `master` branch of the GitHub repository.
 
     ```shell
-    $ git add .
-    $ git commit -m "Configure React app for deployment to GitHub Pages"
-    $ git push origin master
+     git add .
+     git commit -m "Configure React app for deployment to GitHub Pages"
+     git push origin master
     ```
 
     > I recommend exploring the GitHub repository at this point. It will have two branches: `master` and `gh-pages`. The `master` branch will contain the React app's source code, while the `gh-pages` branch will contain the distributable version of the React app.
@@ -225,13 +225,10 @@ In this step, I'll show you how you can store the source code of the React app o
 
 Add and commit the updated code to GitHub as mentioned above and simply run
 
-    ```shell
-    $ npm run build
-    ```
 
-    ```shell
-    $ npm run deploy
-    ```
+     npm run build
+     npm run deploy
+
 
 > Then open your website again
 
