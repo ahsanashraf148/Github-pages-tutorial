@@ -226,6 +226,10 @@ In this step, I'll show you how you can store the source code of the React app o
 Add and commit the updated code to GitHub as mentioned above and simply run
 
     ```shell
+    $ npm run build
+    ```
+
+    ```shell
     $ npm run deploy
     ```
 
