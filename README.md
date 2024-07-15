@@ -1,6 +1,4 @@
-# Deploying a React App* to GitHub Pages
-
-\* created using `create-react-app`
+# Deploying a React App *to GitHub Pages* created using `create-react-app`
 
 # Introduction
 
@@ -22,19 +20,15 @@ This tutorial has been translated from its original English into the following l
 1. [Node and npm](https://nodejs.org/en/download/) are installed. Here are the versions I'll be using while making this tutorial:
 
     ```shell
-    $ node --version
-    v16.13.2
-
-    $ npm --version
-    8.1.2
+    node --version
+     npm --version
     ```
     > Installing npm adds two commands to the system—`npm` and `npx`—both of which I'll be using while making this tutorial.
 
 2. [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) is installed. Here's the version I'll be using while making this tutorial:
 
     ```shell
-    $ git --version
-    git version 2.29.1.windows.1
+     git --version
     ```
 
 3. A [GitHub](https://github.com/signup) account. :octocat:
@@ -162,7 +156,7 @@ At this point, the  React app's `package.json` file includes deployment scripts.
     In my case, I'll run:
 
     ```shell
-    $ git remote add origin https://github.com/ahsanashraf148/ahsanashraf148.github.io.git
+     git remote add origin https://github.com/ahsanashraf148/ahsanashraf148.github.io.git
     ```
 
     > That command tells Git where I want it to push things whenever I—or the `gh-pages` npm package acting on my behalf—issue the `$ git push` command from within this local Git repository.
@@ -229,8 +223,7 @@ Add and commit the updated code to GitHub as mentioned above and simply run
      npm run build
      npm run deploy
 
-
-> Then open your website again
+Go to your repository, and see if the deployment is deployed, under the `Deployments` section on the right side of your repository's `code` page. Then re-open your website again.
 
 # References
 
